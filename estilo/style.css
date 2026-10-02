@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg,#8B0000 0%,#0a0a0a 25%,#0a0a0a 75%,#8B0000 100%);
+    color: #ffffff;
+}
+
+header {
+    background-color: #0d0d0d;
+    padding: 15px 50px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 70px;
+    height: 60px;
+}
+
+.logo h1 {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #D50000;
+    border-bottom: 2px solid #D50000;
+    padding-bottom: 5px;
+}
+
+#inicio {
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    padding: 70px 60px;
+
+    background: linear-gradient(
+        135deg,
+        #8B0000 0%,
+        #0a0a0a 55%,
+        #0a0a0a 100%
+    );
+}
+
+.texto_inicio {
+    max-width: 600px;
+    text-align: left;
+}
+
+.subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #E10600;
+}
+
+.texto_inicio h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin: 5px 0 15px;
+}
+
+.frase {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: 1.6;
+    color: #d0d0d0;
+}
+
+.texto_inicio img {
+    width: 260px;
+    height: auto;
+
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+}
+
+#sobre {
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    padding: 80px 60px;
+    
+    background: linear-gradient(
+        45deg,
+        #0a0a0a 0%,
+        #0a0a0a 55%,
+        #8B0000 100%
+    );
+}
+
+.sobre_texto {
+    max-width: 600px;
+}
+
+.sobre_texto .subtitulo_sobre {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #E10600;
+}
+
+.sobre_texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 10px 0 25px;
+}
+
+.sobre_texto p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.bandeira {
+    width: 400px;
+    height: auto;
+
+    border-radius: 10px;
+
+    filter: drop-shadow(0 10px 20px rgba(255, 6, 0, 0.35));
+}
+
+#historia {
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    padding: 80px 60px;
+
+    background: linear-gradient(
+        140deg,
+        #0a0a0a 0%,
+        #0a0a0a 55%,
+        #8B0000 100%
+    );
+}
+
+.antigo {
+    width: 400px;
+    height: auto;
+
+    border-radius: 10px;
+
+    filter: drop-shadow(0 10px 20px rgba(225, 6, 0, 0.35));
+}
+
+.nossa_historia {
+    max-width: 600px;
+}
+
+.nossa_historia .subtitulo_historia {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #E10600;
+}
+
+.nossa_historia h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 10px 0 25px;
+}
+
+.nossa_historia p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #D0D0D0;
+    margin-bottom: 15px;
+}
+
+#jogadores {
+    padding: 100px 60px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        200deg,
+        #0a0a0a 0%,
+        #0a0a0a 55%,
+        #8B0000 100%
+    );
+}
+
+.subtitulo_idolo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #E10600;
+}
+
+.jogadores_titulo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFFFFF;
+
+    margin: 10px 0 50px;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 260px;
+
+    background: #151515;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    padding-bottom: 25px;
+
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: 
+    translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #FFFFFF;
+
+    margin-top: 20px;
+}
+
+.card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+    color: #E10600;
+
+    margin-top: 5px;
+}
+
+footer {
+    background: #0a0a0a;
+    border-top: 2px solid #E10600;
+    padding: 50px 60px 20px;
+    text-align: center;
+}
+
+.footer_logo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.footer_logo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #D0D0D0;
+    margin-top: 5px;
+}
+
+.footer_bottom {
+    margin-top: 35px;
+    padding-top: 15px;
+border-top: 1px solid #151515;
+}
+
+.footer_bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #888888;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .texto_inicio {
+        text-align: center;
+    }
+
+    .texto_inicio h2 {
+        font-size: 45px;
+    }
+
+    .texto_inicio .subtitulo {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .texto_inicio .frase {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .imagem_inicio img {
+        width: 200px;
+    }
+
+    #sobre {
+        padding: 70px 20px;
+    }
+
+    .sobre_texto {
+        width: 100%;
+    }
+
+    .sobre_texto h2 {
+        font-size: 32px;
+    }
+
+    #historia {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 20px;
+        gap: 40px;
+    }
+
+    .antigo img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .nossa_historia {
+        max-width: 100%;
+    }
+
+    #jogadores {
+        padding: 70px 20px;
+    }
+
+    .jogadores_titulo h2 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer_logo h2 {
+        font-size: 24px;
+    }
+
+    #inicio,
+    #sobre,
+    #historia,
+    #jogadores,
+    footer {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bandeira {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .bandeira img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
